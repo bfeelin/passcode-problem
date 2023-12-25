@@ -1,30 +1,10 @@
-# React + TypeScript + Vite
+# Passcode Problem
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Reference: https://www.youtube.com/watch?v=x7yoUNV3qJI
 
-Currently, two official plugins are available:
+Prompt the user to enter a passcode (akin to unlocking a mobile device)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Psuedocode/Notes:
+- Display buttons 0-9 on the page
+- use useState to keep track of what passcode the user is entering
+- useEffect trigger when passcode changes, if length === 4, check if passcode is correct. Notify user of success/failure and reset the passcode
