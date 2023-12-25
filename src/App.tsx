@@ -31,7 +31,7 @@ function App() {
  
       <p>{status}</p>
       <div className='dot-container'>
-      {Array(4).fill(1).map((opt, i) => {
+      {Array(4).fill(1).map((_, i) => {
         if(i < passcode.length){
           return <div key={i} className='filled-dot dot'></div>
         }
