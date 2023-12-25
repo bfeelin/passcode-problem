@@ -9,7 +9,7 @@ function App() {
   const [status, setStatus] = useState<string>("")
 
   useEffect(() => {
-    if(passcode.length >= 4){
+    if(passcode.length >= correctCode.length){
       if(passcode === correctCode){
         setStatus('Success!')
       }
